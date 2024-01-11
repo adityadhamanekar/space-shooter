@@ -8,6 +8,7 @@ const backgroundMusic = new Audio("./sounds/spaceSong.mp3");
 const laserShoot = new Audio("./sounds/laser.ogg");
 const explosion = new Audio("./sounds/explosion.wav");
 backgroundMusic.play();
+document.body.append(backgroundMusic);
 backgroundMusic.loop = true;
 
 // variable
