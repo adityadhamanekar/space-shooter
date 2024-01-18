@@ -7,15 +7,21 @@ const restart = document.querySelector(".restart");
 const backgroundMusic = new Audio("./sounds/spaceSong.mp3");
 const laserShoot = new Audio("./sounds/laser.ogg");
 const explosion = new Audio("./sounds/explosion.wav");
-backgroundMusic.play();
-document.body.append(backgroundMusic);
-backgroundMusic.loop = true;
+
+setTimeout(() => {
+  backgroundMusic.play();
+}, 5000);
 
 // variable
 const gameScreen = document.getElementById("gameScreen");
 const ship = document.getElementById("ship");
 const laserSpeed = 15;
-const meteorSpeed = 6;
+let meteorSpeed;
+if (window.innerWidth < 500) {
+  meteorSpeed = 4;
+} else {
+  meteorSpeed = 6;
+}
 const laserList = [];
 const meteorList = [];
 let score = document.querySelector(".score");
@@ -204,7 +210,6 @@ function checkShipCollision() {
       shipRect.top + 30 <= meteorRect.bottom
     ) {
       // Collision detected between ship and meteor
-      // Handle collision logic here, e.g., game over, health decrement, etc.
       message.style.display = "flex";
       ship.style.display = "none";
       explosion.play();

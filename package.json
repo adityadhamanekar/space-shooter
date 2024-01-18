@@ -2,22 +2,16 @@
   "name": "shooter",
   "version": "1.0.0",
   "description": "web war game",
-  "default": "game.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
-  },
-  "devDependencies": {
-    "parcel": "^2.0.0-beta.1"
-  },
-  "parcelConfig": {
-    "extends": "@parcel/config-default",
-    "resolvers": {
-      "*.{mp3,ogg,wav}": [
-        "file"
-      ]
-    }
+    "build": "parcel build index.html && ncp sounds dist/sounds "
   },
   "author": "Aditya Dhamanekar",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
