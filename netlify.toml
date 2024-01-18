@@ -1,0 +1,2 @@
+[build]
+command = "parcel build index.html && ncp sounds dist/sounds --dist-dir ./dist "

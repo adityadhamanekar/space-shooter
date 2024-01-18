@@ -4,7 +4,7 @@
   "description": "web war game",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html && ncp sounds dist/sounds "
+    "build": "parcel build index.html && ncp sounds dist/sounds --dist-dir ./dist "
   },
   "author": "Aditya Dhamanekar",
   "license": "ISC",
@@ -13,5 +13,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "ncp": "^2.0.0"
+  }
 }
