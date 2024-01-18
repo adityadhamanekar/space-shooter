@@ -56,6 +56,10 @@ html {
   .score {
     margin-bottom: 5rem;
   }
+  .ship {
+    width: calc(99px * 0.3px);
+    height: calc(72px * 0.3px);
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -68,8 +72,8 @@ html {
   }
 
   .ship {
-    width: calc(99 * 0.3) px;
-    height: calc(72 * 0.3) px;
+    width: calc(99px * 0.3px);
+    height: calc(72px * 0.3px);
   }
 }
 
