@@ -23,7 +23,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
   html {
-    font-size: 10%;
+    font-size: 35%;
   }
 
   .score {
@@ -74,17 +74,12 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(31, 48, 60, 0.8),
-    rgba(25, 16, 43, 0.8)
-  );
 }
 
 .game {
-  width: 100vw;
+  width: 100%;
 
-  height: 100vh;
+  height: 100%;
   background-image: url(./graphics/background.png);
   background-size: cover;
   background-repeat: no-repeat;
