@@ -8,6 +8,9 @@
 
 body {
   box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   font-weight: 400;
   line-height: 1.7;
   font-family: poppins, sans-serif;
@@ -23,34 +26,34 @@ html {
     font-size: 45%;
   }
 
-  .score{
+  .score {
     margin-bottom: 3.5rem;
   }
 }
 @media (max-width: 992px) {
   html {
-    font-size: 40.5%;
+    font-size: 35.5%;
   }
-  .score{
+  .score {
     margin-bottom: 4rem;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 35.5%;
+    font-size: 30.5%;
   }
-  .score{
+  .score {
     margin-bottom: 4.5rem;
   }
 }
 
 @media (max-width: 500px) {
   html {
-    font-size: 30.5%;
+    font-size: 25.5%;
   }
 
-  .score{
+  .score {
     margin-bottom: 5rem;
   }
 }
