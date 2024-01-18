@@ -21,7 +21,7 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   html {
     font-size: 35%;
   }
@@ -30,7 +30,7 @@ html {
     margin-bottom: 3.5rem;
   }
 }
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   html {
     font-size: 30.5%;
   }
@@ -39,7 +39,7 @@ html {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 25.5%;
   }
@@ -48,7 +48,7 @@ html {
   }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   html {
     font-size: 20.5%;
   }
@@ -58,7 +58,7 @@ html {
   }
 }
 
-@media (max-width: 380px) {
+@media only screen and (max-width: 380px) {
   html {
     font-size: 14.5%;
   }
