@@ -28,13 +28,22 @@ let score = document.querySelector(".score");
 let currentScore = 0;
 const meteorDirection = [];
 
+let lastAnimationFrameTime = 0;
+let fpsInterval = 1000 / 60; // Target frame rate: 60 frames per second
+
 // game loop
-function gameLoop() {
-  movingLaser();
-  movingMeteor();
-  checkCollisions();
-  checkShipCollision();
-  requestAnimationFrame(gameLoop);
+function gameLoop(currentTime) {
+  const deltaTime = currentTime - lastAnimationFrameTime;
+  if (deltaTime > fpsInterval) {
+    lastAnimationFrameTime = currentTime - (deltaTime % fpsInterval);
+    movingLaser();
+    movingMeteor();
+    checkCollisions();
+    checkShipCollision();
+    requestAnimationFrame(gameLoop);
+  } else {
+    requestAnimationFrame(gameLoop);
+  }
 }
 
 requestAnimationFrame(gameLoop);
